@@ -7,6 +7,7 @@ import Men from "./pages/Men"
 import Women from "./pages/Women";
 import Accessories from "./pages/Accessories";
 import "./App.css";
+import Contact from "./pages/Contact";
 
 
 const router = createBrowserRouter(
@@ -31,6 +32,10 @@ const router = createBrowserRouter(
         {
           path: "accessories",
           element: <Accessories />,
+        },
+        {
+          path: "contact",
+          element: <Contact />,
         }
       ]
     }
