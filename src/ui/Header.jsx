@@ -48,7 +48,7 @@ function Header() {
   return (
     <AppBar
       position="sticky"
-      sx={{ backgroundColor: "#1C1C1C", padding: "10px 0" }}
+      sx={{ backgroundColor: "#1C1C1C", padding: "10px 0", zIndex: 1000 }}
     >
       <Toolbar
         sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", px: 2 }}

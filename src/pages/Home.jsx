@@ -5,6 +5,10 @@ import CategorySection from '../components/CategorySection'
 import FeaturedProducts from '../components/FeaturedProducts'
 import Testimonials from '../components/Testimonials'
 import NewsletterSubscription from '../components/NewsletterSubscription'
+import SocialMediaGallery from '../components/SocialMediaGallery'
+import BrandStory from '../components/BrandStory'
+import LatestBlogPosts from '../components/LatestBlogPosts'
+// import MaterialUIClockPage from '../components/MaterialUIClockPage'
 
 
 function Home() {
@@ -15,7 +19,11 @@ function Home() {
             <CategorySection />
             <FeaturedProducts />
             <Testimonials />
-            <NewsletterSubscription />           
+            <NewsletterSubscription />    
+            <SocialMediaGallery />  
+            <BrandStory />    
+            <LatestBlogPosts /> 
+            {/* <MaterialUIClockPage /> */}
         </>
     )
 }
