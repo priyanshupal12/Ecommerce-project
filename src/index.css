@@ -5,10 +5,10 @@
 
 /* Gradient Background */
 .ezy__clients3 {
-    background: linear-gradient(to bottom, #000000, #FFD700, #808080, #FFD700);
+    background: linear-gradient(to bottom, #ffffff, #cdcbc3, #e9de9b, #FFD700);
   }
   
-  /* Marquee effect */
+  /* Marquee effect --meet our client */
   @keyframes marquee {
     0% {
       transform: translateX(0);
@@ -31,51 +31,3 @@
     animation-play-state: paused;
   }
 
-  @keyframes marqueeEffect {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-  
-  .marquee {
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 100%;
-    animation: marqueeEffect 10s linear infinite;
-  }
-
- /* Marquee animation */
-/* Marquee animation */
-@keyframes marquee {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-/* Container for the horizontal scrolling effect */
-.marquee-container {
-  display: flex; /* Arrange cards horizontally */
-  gap: 20px; /* Spacing between the cards */
-  overflow-x: auto; /* Allow horizontal scrolling */
-  animation: marquee 30s linear infinite;
-}
-
-/* Each individual card with marquee effect */
-.marquee {
-  animation: marquee 30s linear infinite;
-  display: inline-block;
-  white-space: nowrap;
-  flex-shrink: 0; /* Prevent cards from shrinking */
-}
-
-/* Stop the animation on hover */
-.marquee:hover {
-  animation: none;
-}
