@@ -5,6 +5,7 @@ import NotFound from "./pages/NotFound";
 import Home from "./pages/Home";
 import Men from "./pages/Men"
 import Women from "./pages/Women";
+import Kids from "./pages/Kids";
 import Accessories from "./pages/Accessories";
 import "./App.css";
 import Contact from "./pages/Contact";
@@ -26,8 +27,12 @@ const router = createBrowserRouter(
           element: <Men />,
         },
         {
-          path: "Women",
+          path: "women",
           element: <Women />,
+        },
+        {
+          path: "kids",
+          element: <Kids />,
         },
         {
           path: "accessories",

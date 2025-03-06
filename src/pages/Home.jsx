@@ -4,8 +4,15 @@ import Hero from '../components/Hero'
 import CategorySection from '../components/CategorySection'
 import FeaturedProducts from '../components/FeaturedProducts'
 import MarqueeLogo from '../components/MarqueeLogo'
-import ComingSoon from '../components/ComingSoon'
-import BestSeller from '../components/BestSeller'
+import ComingSoon from '../Components/ComingSoon'
+import BestSeller from '../Components/BestSeller'
+import Testimonials from '../components/Testimonials'
+import NewsletterSubscription from '../components/NewsletterSubscription'
+import SocialMediaGallery from '../components/SocialMediaGallery'
+import BrandStory from '../components/BrandStory'
+import LatestBlogPosts from '../components/LatestBlogPosts'
+// import MaterialUIClockPage from '../components/MaterialUIClockPage'
+
 
 function Home() {
     return (
@@ -17,8 +24,14 @@ function Home() {
             <BestSeller/>
             <ComingSoon/>
             <MarqueeLogo/>
+            <Testimonials />
+            <NewsletterSubscription />    
+            <SocialMediaGallery />  
+            <BrandStory />    
+            <LatestBlogPosts /> 
+            {/* <MaterialUIClockPage /> */}
         </>
     )
 }
 
-export default Home
+export default Home;
