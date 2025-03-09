@@ -3,14 +3,19 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AppLayout from "./layout/AppLayout";
 import NotFound from "./pages/NotFound";  
 import Home from "./pages/Home";
-import Men from "./pages/Men"
+import Men from "./pages/Men";
 import Women from "./pages/Women";
 import Kids from "./pages/Kids";
 import Accessories from "./pages/Accessories";
-import "./App.css";
 import Contact from "./pages/Contact";
+import Register from "./Validation/Register";
+import ProtectedRoute from "./Validation/ProtectedRoute";  // Import ProtectedRoute
+import "./App.css";
+import Login from "./Validation/LoginRoute";
+import TokenProvider from "./Validation/TokenProvider";
 
 
+// Create the router
 const router = createBrowserRouter(
   [
     {
@@ -20,38 +25,47 @@ const router = createBrowserRouter(
       children: [
         {
           path: "/",
-          element: <Home />,
+          element: <ProtectedRoute element={<Home />} />,  // Protect Home route
         },
         {
           path: "men",
-          element: <Men />,
+          element: <ProtectedRoute element={<Men />} />,  // Protect Men route
         },
         {
           path: "women",
-          element: <Women />,
+          element: <ProtectedRoute element={<Women />} />,
         },
         {
           path: "kids",
-          element: <Kids />,
+          element: <ProtectedRoute element={<Kids />} />,
         },
         {
           path: "accessories",
-          element: <Accessories />,
+          element: <ProtectedRoute element={<Accessories />} />,
         },
         {
           path: "contact",
-          element: <Contact />,
-        }
+          element: <ProtectedRoute element={<Contact />} />,
+        },
       ]
-    }
+    },
+    {
+      path: "login",  // Login route for users not logged in
+      element: <Login />,
+    },
+    {
+      path: "register",  // Register route for new users
+      element: <Register />,
+    },
   ]
 );
 
 function App() {
   return (
-    <RouterProvider router={router} />
+    <TokenProvider>  {/* Wrap the application with TokenProvider */}
+      <RouterProvider router={router} />
+    </TokenProvider>
   );
 }
 
 export default App;
-

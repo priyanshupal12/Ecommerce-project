@@ -40,7 +40,7 @@ const ComingSoon = () => {
     <section className="ezy__clients10 light py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white">
       <div className="container px-4">
         <div className="grid grid-cols-12">
-          <div className="col-span-12 xl:col-span-4 xl:pr-12 mb-6 md:mb-12">
+          <div className="col-span-12 xl:col-span-4 xl:pr-12 mb-6 md:mb-12 justify-center items-center mt-80">
             <h2 className="font-bold text-2xl lg:text-[45px] leading-none mb-6">
               Coming Soon!
             </h2>

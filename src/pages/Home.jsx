@@ -11,6 +11,7 @@ import NewsletterSubscription from '../components/NewsletterSubscription'
 import SocialMediaGallery from '../components/SocialMediaGallery'
 import BrandStory from '../components/BrandStory'
 import LatestBlogPosts from '../components/LatestBlogPosts'
+import Register from '../Validation/Register'
 // import MaterialUIClockPage from '../components/MaterialUIClockPage'
 
 
@@ -28,7 +29,8 @@ function Home() {
             <NewsletterSubscription />    
             <SocialMediaGallery />  
             <BrandStory />    
-            <LatestBlogPosts /> 
+            <LatestBlogPosts />
+            
             {/* <MaterialUIClockPage /> */}
         </>
     )

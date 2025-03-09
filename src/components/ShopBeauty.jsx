@@ -39,18 +39,18 @@ const teamMembers = [
 ];
 
 const TeamMemberItem = ({ member }) => (
-	<>
-		<img
-			src={member.picture}
-			alt={member.fullName}
-			className="max-w-full h-auto rounded-full mx-auto"
-			width="230"
-		/>
-		<div className="px-4 py-6 xl:px-6">
-			<h4 className="text-2xl font-medium mb-2">{member.fullName}</h4>
-			{/* <h6 className="font-medium">{member.designation}</h6> */}
-			{/* <p className="opacity-50 mb-0">{member.bio}</p> */}
-			{/* <div className="mt-6">
+  <>
+    <img
+      src={member.picture}
+      alt={member.fullName}
+      className="max-w-full h-auto rounded-full mx-auto"
+      width="230"
+    />
+    <div className="px-4 py-6 xl:px-6">
+      <h4 className="text-2xl font-medium mb-2">{member.fullName}</h4>
+      {/* <h6 className="font-medium">{member.designation}</h6> */}
+      {/* <p className="opacity-50 mb-0">{member.bio}</p> */}
+      {/* <div className="mt-6">
 				{member.socialLinks.map((link, i) => (
 					<a
 						href={link.href}
@@ -61,8 +61,14 @@ const TeamMemberItem = ({ member }) => (
 					</a>
 				))}
 			</div> */}
-		</div>
-	</>
+      <button
+        className="bg-[#FFD700] text-[#1C1C1C] font-bold text-sm hover:bg-[#e6c300] transition-all duration-300 px-6 py-2 rounded focus:outline-none"
+        href=""
+      >
+        Buy Now
+      </button>
+    </div>
+  </>
 );
 
 TeamMemberItem.propTypes = {
